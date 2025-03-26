@@ -11,7 +11,7 @@
         <h1>Informe um numero</h1>
     </header>
     <section>
-        <form action="recebeDesafio02.php" method="GET">
+        <form action="recebeDesafio01.php" method="GET">
             <label for="numero">Numero</label>
             <input type="number" name="numero" id="numero">
             <input type="submit" value="Calcular">
