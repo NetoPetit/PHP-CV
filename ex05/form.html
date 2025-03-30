@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="../desafios_php/style.css">
 </head>
 <body>
-    <main>
-        <form action="superglobais.php" method="post">
+    <main><!--É possível passar GET e POST ao mesmo tempo usando o action-->
+        <form action="superglobais.php?tipo=maria&cargo=secretaria" method="post">
             <label for="usuario">Usuario</label>
             <input type="text" name="usuario" id="usuario">
             <label for="senha">Senha</label>

@@ -16,6 +16,10 @@
 
                 echo "<h1>Superglobal POST</h1>";
                 var_dump($_POST);
+
+                //Superglobal REQUEST pega o GET e o POST
+                echo "<h1>Superglobal REQUEST</h1>";
+                var_dump($_REQUEST);
             ?>
         </pre>
     </main>
