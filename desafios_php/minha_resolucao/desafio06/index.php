@@ -32,10 +32,10 @@
         <h2>Estrutura da Divisão</h2>
 
         <?php 
-            $divisao = (int) ($dividendo / $divisor);
+            $quociente = (int) ($dividendo / $divisor);
             $resto = $dividendo % $divisor;
             echo "$dividendo |  $divisor <br>
-            $resto           |  $divisao <br>";
+            $resto           |  $quociente <br>";
         ?>
 
     </section>
