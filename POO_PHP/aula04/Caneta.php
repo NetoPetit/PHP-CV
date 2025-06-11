@@ -5,9 +5,11 @@
         private $ponta;
         private $tampada;
         
-        public function __construct()
+        public function __construct($modelo, $cor, $ponta)
         {
-            $this->cor = 'Azul';
+            $this->modelo = $modelo;
+            $this->cor = $cor;
+            $this->ponta = $ponta;
             $this->tampar();  
         }
 

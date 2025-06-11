@@ -10,7 +10,7 @@
         <?php 
             require_once 'Caneta.php';
 
-            $c1 = new Caneta();
+            $c1 = new Caneta("BIC", "Azul", 0.5);
             //$c1->setmodelo('BIC');
             //$c1->setPonta(0.5);
             //print "Eu tenho uma caneta {$c1->getModelo()} de ponta {$c1->getPonta()}";
