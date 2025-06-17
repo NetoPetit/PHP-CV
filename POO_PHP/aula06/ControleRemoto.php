@@ -7,7 +7,7 @@
         private $ligado;
         private $tocando;
 
-        private function __construct() {
+        public function __construct() {
             $this->setVolume(50);
             $this->setLigado(false);
             $this->setTocando(false);
@@ -44,11 +44,12 @@
             $this->setLigado(false);
         }
         public function abrirMenu(){
+            echo "======Menu======";
             echo "<br>Está ligado? " . ($this->getLigado() ? "SIM" : "NÃO");
             echo "<br>Está tocando? " . ($this->getTocando() ? "SIM" : "NÃO");
             echo "<br>Volume: " . $this->getVolume();
             for($i = 0; $i <= $this->getVolume(); $i += 10){
-                echo "|";
+                echo " | ";
             }
             echo "<br>";
         }
@@ -58,11 +59,15 @@
         public function maisVolume(){
             if($this->getLigado()){
                 $this->setVolume($this->getVolume() + 5);
+            }else{
+                echo "<p>Erro. Não pode aumentar o volume</p>";
             }
         }
         public function menosVolume(){
             if($this->getLigado()){
                 $this->setVolume($this->getVolume() - 5 );
+            }else{
+                echo "<p>Erro. Não pode diminuir o volume</p>";
             }
         }
         public function ligarMudo(){

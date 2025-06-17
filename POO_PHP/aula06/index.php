@@ -12,7 +12,9 @@
         
         $c1 = new ControleRemoto();
 
-        //$c1->;
+        $c1->ligar();
+        $c1->maisVolume(30);
+        $c1->abrirMenu();
     ?>
 </body>
 </html>
